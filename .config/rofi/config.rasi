@@ -1,0 +1,114 @@
+configuration {
+    show-icons:    true;
+    display-drun:   "Applications";
+    disable-history: false;
+    display-filebrowser:    "File Browser";
+}
+
+* {
+    font:   "Cantarell 12";
+    bg-color:   rgba(0, 0, 0, 25%);
+    fg-color:   white;
+    null-color: rgba(0, 0, 0, 0%);
+    background-color:   @bg-color;
+    foreground:     @fg-color;
+}
+
+#window {
+    background-color:   @bg-color;
+    border:     3;
+    border-radius:      10;
+    padding:    0;
+    border-color:	lightblue;
+}
+
+#mainbox {
+    background-color:   @null-color;
+    padding:    5;
+    border-radius:      10;
+}
+
+#textbox {
+    text-color: white;
+    background-color:   @null-color;
+}
+
+#listview {
+    border:       0px;
+    border-radius:   10;
+    spacing:      0px ;
+    scrollbar:    false;
+    padding:      0px ;
+    lines:      8;
+}
+
+#element {
+    border:  5px;
+    border-color:   @null-color;
+    padding: 3px ;
+}
+
+#element.normal.normal {
+    background-color: @null-color;
+    text-color:       white;
+}
+
+#element.selected.normal {
+    background-color: rgba(173, 216, 230,0.5);
+    text-color:       white;
+    border:     5;
+    border-radius:      5;
+}
+
+#element.alternate.normal {
+    background-color: @null-color;
+    text-color:       white;
+}
+
+#inputbar {
+    border-color:   @null-color;
+    border:     0;
+    border-radius:      10;
+    spacing:    5;
+    text-color: white;
+    padding:    5px ;
+}
+
+#entry {
+    spacing:    0;
+    border: 0;
+    border-radius:  0;
+    background-color:   @null-color;
+    text-color: white;
+    padding:    0;
+}
+
+#prompt {
+    spacing:    0;
+    text-color: @foreground;
+    background-color:   @null-color;
+}
+
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry];
+}
+
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: white;
+    background-color:   @null-color;
+}
+
+element-text, element-icon {
+    text-color: inherit;
+}
+
+#message {
+    border:       0px;
+    border-color: @null-color;
+    border-radius:  10;
+    padding:      1px;
+    spacing:    100;
+}
