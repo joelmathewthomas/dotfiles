@@ -39,3 +39,7 @@
 .config/audacity/
 .config/kamosorc
 .config/kdeglobals
+.config/NuGet/
+.config/VeraCrypt/
+.config/pupgui/
+.config/spectaclerc
