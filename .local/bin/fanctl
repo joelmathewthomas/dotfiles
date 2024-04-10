@@ -1,5 +1,9 @@
 #!/bin/bash
-
+if [ -f ~/.local/bin/fanctl ]; then
+    # Read the values of text, class, and tooltip
+    source ~/.local/bin/stats/fanstat
+fi
+    
 # Function to check if a string is an integer
 is_integer() {
     [[ $1 =~ ^[0-9]+$ ]]
@@ -42,10 +46,42 @@ case $1 in
         tooltip="Auto"
         class="auto"
         ;;
+	incr)
+		if [[ $tooltipstat != "Auto" ]]; then
+			new_tooltipstat="${tooltipstat%?}"
+			new_speed=$(( $new_tooltipstat + 10))
+			if [[ $new_speed -lt 100 ]]; then
+				nbfc set -f 0 1 -s $new_speed
+				text="custom"
+		        tooltip="$new_speed%"
+		        class="custom"
+		    else
+		    	text=$textstat
+		        tooltip="$tooltipstat"
+		        class=$classstat
+		    fi
+		fi
+		;;
+	decr)
+		if [[ $tooltipstat != "Auto" ]]; then
+			new_tooltipstat="${tooltipstat%?}"
+			new_speed=$(( $new_tooltipstat - 10))
+			if [[ $new_speed -gt 0 ]]; then
+				nbfc set -f 0 1 -s $new_speed
+				text="custom"
+		        tooltip="$new_speed%"
+		        class="custom"
+		    else
+		    	text=$textstat
+		        tooltip="$tooltipstat"
+		        class=$classstat
+		    fi
+		fi
+		;;
     *)
         if is_integer "$1"; then   # Check if argument is an integer
             nbfc set -f 0 1 -s "$1"   # Execute nbfc with the provided integer value
-            text="$1"
+            text="custom"
             tooltip="$1%"
             class="custom"
         else
@@ -56,7 +92,7 @@ case $1 in
 esac
 
 # Output text, tooltip, and class to statfile
-echo "text=$text" > ~/.local/bin/stats/fanstat
-echo "tooltip=$(waybar_tooltip "$tooltip")" >> ~/.local/bin/stats/fanstat
-echo "class=$class" >> ~/.local/bin/stats/fanstat
+echo "textstat=$text" > ~/.local/bin/stats/fanstat
+echo "tooltipstat=$(waybar_tooltip "$tooltip")" >> ~/.local/bin/stats/fanstat
+echo "classstat=$class" >> ~/.local/bin/stats/fanstat
 

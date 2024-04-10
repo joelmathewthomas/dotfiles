@@ -6,7 +6,7 @@ if [ -f ~/.local/bin/fanctl ]; then
     source ~/.local/bin/stats/fanstat
     
     # Output the values in JSON format using printf
-    printf '{"text": "%s", "tooltip": "%s", "class": "%s"}\n' "$text" "$tooltip" "$class"
+    printf '{"text": "%s", "tooltip": "%s", "class": "%s"}\n' "$textstat" "$tooltipstat" "$classstat"
 else
     echo "{\"error\": \"File not found\"}"
 fi
