@@ -128,7 +128,7 @@
     	"on-scroll-down": "~/.local/bin/fanctl decr",
     	"on-click": "~/.local/bin/fanctl min",
     	"on-click-right": "~/.local/bin/fanctl max",
-    	"on-click-double": "~/.local/bin/fanctl auto"
+    	"on-click-middle": "~/.local/bin/fanctl auto"
     },
     "custom/quit": {
         "format": " 󰗼 ",
