@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# Function to check if a string is an integer
+is_integer() {
+    [[ $1 =~ ^[0-9]+$ ]]
+}
+
+# Function to format tooltip message (You need to define this function)
+waybar_tooltip() {
+    # Replace this with your logic to format tooltip message if necessary
+    echo "$1"
+}
+
+# Check if the correct number of arguments is provided
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 [min|max|auto|integer]"
+    exit 1
+fi
+
+# Initialize variables for the text, tooltip, and class
+text=""
+tooltip=""
+class=""
+
+# Check the argument and execute the corresponding command
+case $1 in
+    min)
+        nbfc set -f 0 1 -s 30
+        text="min"
+        tooltip="30%"
+        class="min"
+        ;;
+    max)
+        nbfc set -f 0 1 -s 100
+        text="max"
+        tooltip="100%"
+        class="max"
+        ;;
+    auto)
+        nbfc set -f 0 1 -a
+        text="auto"
+        tooltip="Auto"
+        class="auto"
+        ;;
+    *)
+        if is_integer "$1"; then   # Check if argument is an integer
+            nbfc set -f 0 1 -s "$1"   # Execute nbfc with the provided integer value
+            text="$1"
+            tooltip="$1%"
+            class="custom"
+        else
+            echo "Invalid argument. Usage: $0 [min|max|auto|integer]"
+            exit 1
+        fi
+        ;;
+esac
+
+# Output text, tooltip, and class to statfile
+echo "text=$text" > ~/.local/bin/stats/fanstat
+echo "tooltip=$(waybar_tooltip "$tooltip")" >> ~/.local/bin/stats/fanstat
+echo "class=$class" >> ~/.local/bin/stats/fanstat
+

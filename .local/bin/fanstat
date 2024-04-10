@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if the file exists
+if [ -f ~/.local/bin/fanctl ]; then
+    # Read the values of text, class, and tooltip
+    source ~/.local/bin/stats/fanstat
+    
+    # Output the values in JSON format using printf
+    printf '{"text": "%s", "tooltip": "%s", "class": "%s"}\n' "$text" "$tooltip" "$class"
+else
+    echo "{\"error\": \"File not found\"}"
+fi
