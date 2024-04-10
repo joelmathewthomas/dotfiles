@@ -108,6 +108,7 @@
         },
         "modules": [
             "user",
+            "custom/fan",
             "idle_inhibitor",
             "custom/quit",
             "custom/sleep",
@@ -115,6 +116,16 @@
             "custom/reboot",
             "custom/power"
         ]
+    },
+    "custom/fan": {
+    	"format": " 󰈐 ",
+    	"tooltip": true,
+    	"return-type": "json",
+    	"exec":	"~/.local/bin/fanstat",
+    	"interval": 1,
+    	"on-click": "~/.local/bin/fanctl min",
+    	"on-click-right": "~/.local/bin/fanctl max",
+    	"on-click-middle": "~/.local/bin/fanctl auto"
     },
     "custom/quit": {
         "format": " 󰗼 ",
