@@ -53,13 +53,18 @@ case $1 in
 			if [[ $new_speed -lt 100 ]]; then
 				nbfc set -f 0 1 -s $new_speed
 				text="custom"
-		        tooltip="$new_speed%"
-		        class="custom"
-		    else
-		    	text=$textstat
+		        	tooltip="$new_speed%"
+		        	class="custom"
+			else
+				text=$textstat
+		        	tooltip="$tooltipstat"
+		        	class=$classstat
+
+			fi
+		else
+			text=$textstat
 		        tooltip="$tooltipstat"
 		        class=$classstat
-		    fi
 		fi
 		;;
 	decr)
@@ -69,13 +74,18 @@ case $1 in
 			if [[ $new_speed -gt 0 ]]; then
 				nbfc set -f 0 1 -s $new_speed
 				text="custom"
-		        tooltip="$new_speed%"
-		        class="custom"
-		    else
-		    	text=$textstat
+		        	tooltip="$new_speed%"
+		        	class="custom"
+			else
+				text=$textstat
+		        	tooltip="$tooltipstat"
+		        	class=$classstat
+
+			fi
+		else
+			text=$textstat
 		        tooltip="$tooltipstat"
 		        class=$classstat
-		    fi
 		fi
 		;;
     *)
