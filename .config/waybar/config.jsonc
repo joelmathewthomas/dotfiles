@@ -196,7 +196,8 @@
     },
     "custom/arch": {
         "format": "  󰣇",
-        "tooltip": false
+        "tooltip": false,
+	"on-click":"~/.local/bin/rofi-waybar"
     },
     "memory": {
         "interval": 30,

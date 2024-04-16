@@ -50,3 +50,5 @@
 .config/libreoffice/
 .config/session/
 .config/qBittorrent/
+.config/Postman
+.config/nvim
