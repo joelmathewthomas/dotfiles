@@ -10,4 +10,16 @@ ttf-font-awesome noto-fonts-emoji noto-fonts-extra nerd-fonts eog gwenview
 cava iniparser fftw nordic-theme python-clickgen bibita-cursor-theme
 lxappearance breeze ark ntfs-3g veracrypt nemo mpv mangohud lib32-mangohud
 gamemode lib32-gamemode libreoffice-fresh webapp-manager goverlay github-cli
-gvfs-mtp gparted xorg-xhost
+gvfs-mtp gparted xorg-xhost ufw gufw kvantum-qt6-git
+
+
+
+
+
+
+
+
+
+# GitHub
+https://github.com/vinceliuice/Orchis-kde
+https://github.com/vinceliuice/Orchis-theme

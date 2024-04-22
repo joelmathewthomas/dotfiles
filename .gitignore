@@ -52,3 +52,5 @@
 .config/qBittorrent/
 .config/Postman
 .config/nvim
+.config/okularrc
+.config/Kvantum
