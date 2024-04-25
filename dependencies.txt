@@ -23,3 +23,4 @@ gvfs-mtp gparted xorg-xhost ufw gufw kvantum-qt6-git
 # GitHub
 https://github.com/vinceliuice/Orchis-kde
 https://github.com/vinceliuice/Orchis-theme
+https://aur.archlinux.org/nordic-kde-git.git
