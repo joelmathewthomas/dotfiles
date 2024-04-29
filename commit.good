@@ -1,0 +1,34 @@
+Hyprland, built from branch  at commit fe7b748eb668136dd0558b7c8279bfcd7ab4d759  (props: bump version to 0.39.1).
+Date: Tue Apr 16 16:01:03 2024
+Tag: v0.39.1, commits: 4460
+
+flags: (if any)
+
+
+System Information:
+System name: Linux
+Node name: nitro5
+Release: 6.8.7-arch1-1
+Version: #1 SMP PREEMPT_DYNAMIC Wed, 17 Apr 2024 15:20:28 +0000
+
+
+GPU information: 
+0000:00:02.0 VGA compatible controller [0300]: Intel Corporation TigerLake-H GT1 [UHD Graphics] [8086:9a60] (rev 01) (prog-if 00 [VGA controller])
+0000:01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA107M [GeForce RTX 3050 Ti Mobile] [10de:25a0] (rev a1) (prog-if 00 [VGA controller])
+
+
+os-release: NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+
+plugins:
+

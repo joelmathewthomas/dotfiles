@@ -58,4 +58,8 @@
 .config/chromium/
 .config/katemetainfos
 .config/nemo/
-
+.config/.wallpaper/astronautjelly.png
+.config/Proton Mail/
+.config/konsolerc
+.config/konsolesshconfig
+.config/simple-update-notifier/
