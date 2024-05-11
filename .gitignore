@@ -63,3 +63,10 @@
 .config/konsolerc
 .config/konsolesshconfig
 .config/simple-update-notifier/
+.config/Upscayl/
+.config/VirtualBox/
+.config/bashtop/
+.config/kcalcrc
+.config/systemmonitorrc
+.config/user-dirs.dirs
+.config/user-dirs.locale

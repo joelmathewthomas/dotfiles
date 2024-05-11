@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check if argument is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <commit_message>"
+    exit 1
+fi
+
+# Add all changes
+git add .
+
+# Commit with the provided argument
+commit_message="$1"
+git commit -m "$commit_message"
+
+# Push changes to the master branch of the origin remote
+git push -u origin master
