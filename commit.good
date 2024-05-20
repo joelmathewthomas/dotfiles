@@ -1,6 +1,9 @@
-Hyprland, built from branch  at commit fe7b748eb668136dd0558b7c8279bfcd7ab4d759  (props: bump version to 0.39.1).
-Date: Tue Apr 16 16:01:03 2024
-Tag: v0.39.1, commits: 4460
+
+
+
+Hyprland, built from branch main at commit ed3a888fc274e09a5097ebbe3d206e4bc85bbb87  (hyprpm: fix style).
+Date: Sat May 11 04:26:54 2024
+Tag: v0.40.0-59-ged3a888f, commits: 4665
 
 flags: (if any)
 
@@ -8,8 +11,8 @@ flags: (if any)
 System Information:
 System name: Linux
 Node name: nitro5
-Release: 6.8.7-arch1-1
-Version: #1 SMP PREEMPT_DYNAMIC Wed, 17 Apr 2024 15:20:28 +0000
+Release: 6.9.1-arch1-1
+Version: #1 SMP PREEMPT_DYNAMIC Fri, 17 May 2024 16:56:38 +0000
 
 
 GPU information: 
@@ -31,4 +34,3 @@ LOGO=archlinux-logo
 
 
 plugins:
-
