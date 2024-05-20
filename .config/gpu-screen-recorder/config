@@ -1,0 +1,30 @@
+main.record_area_option eDP-1
+main.record_area_width 1920
+main.record_area_height 1080
+main.fps 144
+main.merge_audio_tracks true
+main.audio_input Default output
+main.color_range limited
+main.quality very_high
+main.codec auto
+main.audio_codec opus
+main.framerate_mode auto
+main.advanced_view false
+main.overclock false
+main.show_notifications true
+main.record_cursor true
+streaming.service twitch
+streaming.youtube.key 
+streaming.twitch.key 
+streaming.custom.url 
+streaming.custom.container flv
+streaming.start_recording_hotkey 0 0
+record.save_directory /home/joel/Videos
+record.container matroska
+record.start_recording_hotkey 0 0
+record.pause_recording_hotkey 0 0
+replay.save_directory /home/joel/Videos
+replay.container mp4
+replay.time 30
+replay.start_recording_hotkey 0 0
+replay.save_recording_hotkey 0 0
