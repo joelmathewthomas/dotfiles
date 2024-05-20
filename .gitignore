@@ -71,3 +71,5 @@
 .config/user-dirs.dirs
 .config/user-dirs.locale
 .config/menus/
+.config/gpu-screen-recorder/
+.config/okularpartrc
