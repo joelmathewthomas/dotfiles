@@ -1,0 +1,2 @@
+2024-05-21 22:15:24,555-DEBUG-Worker_1-ERROR: [generic] Unable to download webpage: <urllib3.connection.HTTPSConnection object at 0x7255d524d3a0>: Failed to establish a new connection: [Errno -2] Name or service not known (caused by TransportError('<urllib3.connection.HTTPSConnection object at 0x7255d524d3a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+2024-05-21 22:15:24,555-DEBUG-Worker_1-Child process exited with non-zero code: 1
