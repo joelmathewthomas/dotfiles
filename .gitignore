@@ -73,3 +73,9 @@
 .config/menus/
 .config/gpu-screen-recorder/
 .config/okularpartrc
+.config/kiorc
+.config/ktrashrc
+.config/kwinrc
+.config/libaccounts-glib/
+.config/partitionmanagerrc
+.config/systemsettingsrc
