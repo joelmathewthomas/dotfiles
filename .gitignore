@@ -79,3 +79,7 @@
 .config/libaccounts-glib/
 .config/partitionmanagerrc
 .config/systemsettingsrc
+.config/Signal/
+.config/filetypesrc
+.config/trashrc
+.config/wireshark/
