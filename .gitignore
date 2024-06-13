@@ -83,3 +83,5 @@
 .config/filetypesrc
 .config/trashrc
 .config/wireshark/
+.config/Electron/
+.config/WebCord/
