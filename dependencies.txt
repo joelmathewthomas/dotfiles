@@ -1,18 +1,55 @@
-base-devel git paru pipewire lib32-pipewire lib32-pipewire-jack noisetorch-bin
-pipewire-alsa wireplumber pipewire-pulse alsa-firmware pipewire-alsa
-pavucontrol hyprland swaync-git xdg-desktop-portal-hyprland polkit-kde-agent
-qt5-wayland qt6-wayland sddm kitty gnome-terminal thunar thunar-archive-plugin
-hypridle hyprpaper hyprpicker hyprlock brightnessctl xorg-xev gvfs
-gnome-terminal kate nwg-look-bin papirus-icon-theme network-manager-applet
-cliphist pywal ccache networkmanager qt6ct qt5ct emote rofi-lbonn-wayland
-wlogout waybar ttf-fira-sans gnome-keyring eww noto-fonts noto-fonts-cjk
-ttf-font-awesome noto-fonts-emoji noto-fonts-extra nerd-fonts eog gwenview
-cava iniparser fftw nordic-theme python-clickgen bibita-cursor-theme
-lxappearance breeze ark ntfs-3g veracrypt nemo mpv mangohud lib32-mangohud
-gamemode lib32-gamemode libreoffice-fresh webapp-manager goverlay github-cli
-gvfs-mtp gparted xorg-xhost ufw gufw kvantum-qt6-git grim slurp
-hyprwayland-scanner xdg-user-dirs wl-clip-persist-git archlinux-xdg-menu
-hyprcursor-git hyprwayland-scanner-git hyprutils-git
+base-devel ccache
+git github-cli
+paru
+pipewire lib32-pipewire lib32-pipewire-jack pipewire-alsa pipewire-pulse wireplumber pavucontrol
+noisetorch-bin
+alsa-firmware
+hyprland swaync-git xdg-desktop-portal-hyprland polkit-kde-agent hypridle hyprpaper hyprpicker hyprlock hyprwayland-scanner hyprwayland-scanner-git hyprutils-git hyprcursor-git
+qt5-wayland qt6-wayland
+sddm
+kitty
+gnome-terminal eog gwenview
+thunar thunar-archive-plugin thunar-volman thunar-shares-plugin gtkhash-thunar file-roller ffmpegthumbnailer tumbler catfish
+brightnessctl
+xorg-xev xorg-xhost
+gvfs gvfs-mtp
+kate
+nwg-look-bin
+papirus-icon-theme
+network-manager-applet networkmanager
+cliphist
+pywal
+qt6ct qt5ct kvantum-qt6-git
+emote
+rofi-lbonn-wayland
+wlogout
+waybar
+ttf-fira-sans noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome nerd-fonts
+gnome-keyring
+eww
+cava iniparser fftw
+nordic-theme
+python-clickgen
+bibita-cursor-theme
+lxappearance
+breeze
+ark
+ntfs-3g
+veracrypt
+nemo
+mpv
+mangohud lib32-mangohud
+gamemode lib32-gamemode
+libreoffice-fresh
+webapp-manager
+goverlay
+ufw gufw
+grim slurp
+wl-clip-persist-git
+archlinux-xdg-menu
+gparted
+xdg-user-dirs
+
 
 
 
