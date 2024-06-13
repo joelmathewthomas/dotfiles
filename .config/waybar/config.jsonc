@@ -143,7 +143,7 @@
     "custom/sleep": {
         "format": " 󰤄 ",
         "tooltip": false,
-        "on-triple-click": "systemctl suspend; hyprlock"
+        "on-triple-click": "systemctl suspend"
     },
     "custom/reboot": {
         "format": "   ",
