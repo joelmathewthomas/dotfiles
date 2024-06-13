@@ -49,7 +49,7 @@ wl-clip-persist-git
 archlinux-xdg-menu
 gparted
 xdg-user-dirs
-
+eza
 
 
 
