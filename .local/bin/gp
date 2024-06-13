@@ -1,17 +1,28 @@
 #!/bin/bash
 
-# Check if argument is provided
+# Check if at least one argument is provided
 if [ $# -eq 0 ]; then
-    echo "Usage: $0 <commit_message>"
+    echo "Usage: $0 <commit_message> [branch]"
     exit 1
 fi
 
 # Add all changes
+echo "Staging all changes"
 git add .
 
 # Commit with the provided argument
+echo "Commiting all changes"
 commit_message="$1"
 git commit -m "$commit_message"
 
-# Push changes to the master branch of the origin remote
-git push -u origin master
+# Check if a branch name is provided, otherwise use 'master'
+if [ -z "$2" ]; then
+    echo "No branch was specified, using default master"
+    branch="master"
+else
+    branch="$2"
+fi
+
+# Push changes to the specified branch of the origin remote
+echo "Pushing to $branch"
+git push -u origin "$branch"
