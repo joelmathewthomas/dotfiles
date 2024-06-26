@@ -6,7 +6,7 @@ noisetorch-bin
 alsa-firmware
 hyprland swaync-git xdg-desktop-portal-hyprland polkit-kde-agent hypridle hyprpaper hyprpicker hyprlock hyprwayland-scanner hyprwayland-scanner-git hyprutils-git hyprcursor-git
 qt5-wayland qt6-wayland
-sddm
+sddm-git
 kitty
 gnome-terminal eog gwenview
 thunar thunar-archive-plugin thunar-volman thunar-shares-plugin gtkhash-thunar file-roller ffmpegthumbnailer tumbler catfish
@@ -30,7 +30,7 @@ eww
 cava iniparser fftw
 nordic-theme
 python-clickgen
-bibita-cursor-theme
+bibata-cursor-theme
 lxappearance
 breeze
 ark
