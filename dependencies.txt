@@ -4,7 +4,7 @@ paru
 pipewire lib32-pipewire lib32-pipewire-jack pipewire-alsa pipewire-pulse wireplumber pavucontrol
 noisetorch-bin
 alsa-firmware
-hyprland swaync-git xdg-desktop-portal-hyprland polkit-kde-agent hypridle hyprpaper hyprpicker hyprlock hyprwayland-scanner hyprwayland-scanner-git hyprutils-git hyprcursor-git
+hyprland swaync-git xdg-desktop-portal-hyprland polkit-kde-agent hypridle-git hyprpaper hyprpicker hyprlock-git hyprwayland-scanner hyprwayland-scanner-git hyprutils-git hyprcursor-git
 qt5-wayland qt6-wayland
 sddm-git
 kitty
