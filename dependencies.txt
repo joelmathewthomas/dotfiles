@@ -46,7 +46,7 @@ goverlay
 ufw gufw
 grim slurp
 wl-clip-persist-git
-archlinux-xdg-menu
+archlinux-xdg-menu kde-cli-tools
 gparted
 xdg-user-dirs
 eza
