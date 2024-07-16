@@ -51,7 +51,7 @@ gparted
 xdg-user-dirs
 eza
 zsh fzf stow zoxide
-
+tlp tlp-rdw 
 
 
 
