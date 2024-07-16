@@ -21,7 +21,7 @@ cliphist
 pywal
 qt6ct qt5ct kvantum-qt6-git
 emote
-rofi-lbonn-wayland
+rofi-wayland
 wlogout
 waybar
 ttf-fira-sans noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome nerd-fonts
@@ -50,7 +50,7 @@ archlinux-xdg-menu kde-cli-tools
 gparted
 xdg-user-dirs
 eza
-
+zsh fzf stow zoxide
 
 
 
