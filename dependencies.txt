@@ -16,7 +16,7 @@ gvfs gvfs-mtp
 kate
 nwg-look-bin
 papirus-icon-theme
-network-manager-applet networkmanager
+network-manager-applet networkmanager blueman
 cliphist
 pywal
 qt6ct qt5ct kvantum-qt6-git
