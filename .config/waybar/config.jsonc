@@ -2,6 +2,7 @@
     "layer": "top",
     "height": 30,
     "spacing": 5,
+    "output": [ "eDP-1" ],
     "modules-left": [
         "group/group-cpu",
         "hyprland/workspaces"
