@@ -23,6 +23,12 @@ def rename_folders_and_files(directory):
             os.rename(old_path, new_path)
 
 if __name__ == "__main__":
-    root_directory = input("Enter the root directory path: ")
-    rename_folders_and_files(root_directory)
+    root_directory = os.getcwd()
+    confirmation = input(f"Are you sure you want to rename all files and folders in '{root_directory}'? (yes/no): ")
+    
+    if confirmation.lower() == 'yes':
+        rename_folders_and_files(root_directory)
+        print("Renaming completed.")
+    else:
+        print("Operation canceled.")
 
