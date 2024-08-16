@@ -75,7 +75,7 @@ alias fast='wget -O /dev/null http://speedtest.tele2.net/10GB.zip'
 
 # Exports
 export PATH="/usr/lib/ccache/bin:/home/$(whoami)/.local/bin/:$PATH"
-export MAKEFLAGS='-j3 -l2'
+export MAKEFLAGS="-j$(( $(nproc) + 1 )) -l$(nproc)"
 
 # Shell integrations
 eval "$(fzf --zsh)"
