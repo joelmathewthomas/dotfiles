@@ -11,7 +11,7 @@ Follow these steps to clone the repository and set up the dotfiles:
 First, clone the repository to your home directory:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/dotfiles.git $HOME/.dotfiles
+git clone https://github.com/joelmathewthomas/dotfiles.git $HOME/.dotfiles
 ```
 
 ### Enter the Directory
