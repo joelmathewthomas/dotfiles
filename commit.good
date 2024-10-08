@@ -1,23 +1,21 @@
-
-
-
-Hyprland, built from branch main at commit ed3a888fc274e09a5097ebbe3d206e4bc85bbb87  (hyprpm: fix style).
-Date: Sat May 11 04:26:54 2024
-Tag: v0.40.0-59-ged3a888f, commits: 4665
+Hyprland, built from branch  at commit 0f594732b063a90d44df8c5d402d658f27471dfe  (props: bump version to 0.43.0).
+Date: Sun Sep 8 16:48:21 2024
+Tag: v0.43.0, commits: 5196
 
 flags: (if any)
 
 
 System Information:
 System name: Linux
-Node name: nitro5
-Release: 6.9.1-arch1-1
-Version: #1 SMP PREEMPT_DYNAMIC Fri, 17 May 2024 16:56:38 +0000
+Node name: void
+Release: 6.10.10-arch1-1
+Version: #1 SMP PREEMPT_DYNAMIC Thu, 12 Sep 2024 17:21:02 +0000
 
 
 GPU information: 
-0000:00:02.0 VGA compatible controller [0300]: Intel Corporation TigerLake-H GT1 [UHD Graphics] [8086:9a60] (rev 01) (prog-if 00 [VGA controller])
-0000:01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA107M [GeForce RTX 3050 Ti Mobile] [10de:25a0] (rev a1) (prog-if 00 [VGA controller])
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation AD107M [GeForce RTX 4050 Max-Q / Mobile] [10de:28e1] (rev a1) (prog-if 00 [VGA controller])
+35:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt [Radeon 680M] [1002:1681] (rev 0a) (prog-if 00 [VGA controller])
+NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  560.35.03  Release Build  (archlinux-builder@)  
 
 
 os-release: NAME="Arch Linux"
@@ -34,3 +32,5 @@ LOGO=archlinux-logo
 
 
 plugins:
+
+
