@@ -1,21 +1,23 @@
-Hyprland, built from branch  at commit 0f594732b063a90d44df8c5d402d658f27471dfe  (props: bump version to 0.43.0).
-Date: Sun Sep 8 16:48:21 2024
-Tag: v0.43.0, commits: 5196
+Hyprland 0.45.0 built from branch  at commit a551f85b9129eac76a5f295ecfe4fb39f96f435c  (renderer: scaled surfaces could have zero area (8423)).
+Date: Mon Nov 11 19:18:50 2024
+Tag: v0.45.0-8-ga551f85b, commits: 5441
+built against aquamarine 0.5.0
 
-flags: (if any)
+
+flags set:
+debug
 
 
 System Information:
 System name: Linux
 Node name: void
-Release: 6.10.10-arch1-1
-Version: #1 SMP PREEMPT_DYNAMIC Thu, 12 Sep 2024 17:21:02 +0000
+Release: 6.11.9-arch1-1
+Version: #1 SMP PREEMPT_DYNAMIC Sun, 17 Nov 2024 16:06:17 +0000
 
 
 GPU information: 
 01:00.0 VGA compatible controller [0300]: NVIDIA Corporation AD107M [GeForce RTX 4050 Max-Q / Mobile] [10de:28e1] (rev a1) (prog-if 00 [VGA controller])
 35:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt [Radeon 680M] [1002:1681] (rev 0a) (prog-if 00 [VGA controller])
-NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  560.35.03  Release Build  (archlinux-builder@)  
 
 
 os-release: NAME="Arch Linux"
