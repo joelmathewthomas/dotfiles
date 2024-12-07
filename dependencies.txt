@@ -52,8 +52,7 @@ xdg-user-dirs
 eza
 zsh fzf stow zoxide
 power-profiles-daemon
-plasma-workspace systemsettings
-
+qt6ct-kde
 
 
 
