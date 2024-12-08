@@ -72,6 +72,7 @@ alias grep='grep --color=auto'
 
 # Custom Aliases
 alias fast='wget -O /dev/null http://speedtest.tele2.net/10GB.zip'
+alias feh="feh --image-bg black"
 
 # Exports
 export PATH="/usr/lib/ccache/bin:/home/$(whoami)/.local/bin/:$PATH"
