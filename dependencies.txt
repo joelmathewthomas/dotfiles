@@ -8,7 +8,7 @@ hyprland swaync-git xdg-desktop-portal-hyprland hyprpolkitagent hypridle-git hyp
 qt5-wayland qt6-wayland
 sddm-git
 kitty
-gnome-terminal eog gwenview
+gwenview feh
 thunar thunar-archive-plugin thunar-volman thunar-shares-plugin gtkhash-thunar file-roller ffmpegthumbnailer tumbler catfish
 brightnessctl
 xorg-xev xorg-xhost
