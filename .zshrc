@@ -81,3 +81,13 @@ export MAKEFLAGS="-j$(( $(nproc) + 1 )) -l$(nproc)"
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# Source all configuration files from ~/.zshrc.d
+ZSHRC_D_DIR="$HOME/.zshrc.d"
+
+if [ -d "$ZSHRC_D_DIR" ]; then
+    for config in "$ZSHRC_D_DIR"/*; do
+        [ -r "$config" ] && source "$config"
+    done
+fi
+
