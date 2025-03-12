@@ -141,6 +141,10 @@ button {
     color: @surface2;
 }
 
+#cava {
+    color: @blue;
+}
+
 #network {
     color: @blue;
 }
