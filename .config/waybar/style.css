@@ -107,12 +107,13 @@ button {
 #wireplumber,
 #custom-pacman,
 #tray,
+#cava,
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd {
+#mpris {
     padding: 0 2px;
-    color: @text;
+    color: @lavender;
     border-radius: 15px;
     margin: 2px 0;
 }

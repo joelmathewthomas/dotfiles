@@ -4,13 +4,14 @@
     "spacing": 5,
     "modules-left": [
         "group/group-cpu",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+	"mpris",
+	"cava"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-	"cava",
         "custom/pacman",
         "gamemode",
         "tray",
@@ -43,6 +44,15 @@
         },
         "sort-by-number": true
     },
+    "mpris": {
+	"format": "  {dynamic}",
+	"format-paused": "{  {dynamic}}",
+	"format-stopped": "",
+	"interval": 2,
+	"dynamic-order": ["title", "artist"],
+	"artist-len": 10,
+	"elipsis": "..."
+     },
     "gamemode": {
 		"format": "{glyph}",
 		"format-alt": "{glyph} {count}",
