@@ -14,7 +14,7 @@ brightnessctl
 xorg-xev xorg-xhost
 gvfs gvfs-mtp
 kate
-nwg-look-bin
+nwg-look
 papirus-icon-theme
 network-manager-applet networkmanager blueman
 cliphist
