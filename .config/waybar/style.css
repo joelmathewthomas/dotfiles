@@ -142,14 +142,6 @@ button {
     color: @surface2;
 }
 
-#cava {
-    color: @blue;
-}
-
-#network {
-    color: @blue;
-}
-
 #network.disconnected {
     color: @surface2;
 }
