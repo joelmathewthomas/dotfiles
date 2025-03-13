@@ -50,7 +50,10 @@
 	"format-stopped": "",
 	"interval": 2,
 	"dynamic-order": ["title", "artist"],
-	"artist-len": 10,
+	"dynamic-importance-order": ["title", "artist"],
+	"title-len": 30,
+	"artist-len": 20,
+	"max-length": 30,
 	"elipsis": "..."
      },
     "gamemode": {
