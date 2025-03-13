@@ -19,7 +19,7 @@ papirus-icon-theme
 network-manager-applet networkmanager blueman
 cliphist
 pywal
-qt6ct qt5ct kvantum-qt6-git
+qt6ct-kde qt5ct kvantum-qt6-git
 emote
 rofi-wayland
 wlogout
@@ -52,7 +52,6 @@ xdg-user-dirs
 eza
 zsh fzf stow zoxide
 power-profiles-daemon
-qt6ct-kde
 
 
 
