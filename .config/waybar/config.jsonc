@@ -81,7 +81,10 @@
         "format": "{:%I:%M %p}"
     },
     "battery": {
-        "interval": 10,
+        "interval": 2,
+	"states": {
+            "warning": 30
+	},
         "format": "{icon}",
         "format-charging": "󰂄",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],

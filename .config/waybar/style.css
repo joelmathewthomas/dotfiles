@@ -158,7 +158,11 @@ button {
     color: @green;
 }
 
-#battery.warning:not(.charging) {
+#battery.plugged {
+    color: @blue;
+}
+
+#battery.warning {
     color: @red;
 }
 
