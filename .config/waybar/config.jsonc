@@ -99,7 +99,7 @@
         "format-wifi": "{essid}",
         "format-disconnected": "󰤭",
         "tooltip-format": "Connected to {essid}",
-        "on-click": "gnome-terminal -- nmtui"
+        "on-click": "kitty -- nmtui"
     },
     "cava": {
         "framerate": 144,
