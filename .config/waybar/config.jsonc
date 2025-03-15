@@ -206,7 +206,8 @@
     },
     "backlight": {
         "format": "{icon}  {percent}%",
-        "format-icons": ["󰃜", "󰃛", "󰃚"]
+        "format-icons": ["󰃜", "󰃛", "󰃚"],
+	"scroll-step": 5
     },
     "group/group-cpu": {
         "orientation": "inherit",
