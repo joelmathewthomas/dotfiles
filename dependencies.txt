@@ -4,7 +4,10 @@ paru
 pipewire lib32-pipewire lib32-pipewire-jack pipewire-alsa pipewire-pulse wireplumber pavucontrol
 noisetorch-bin
 alsa-firmware
-hyprland swaync-git xdg-desktop-portal-hyprland hyprpolkitagent hypridle-git hyprpaper hyprpicker hyprlock-git hyprwayland-scanner hyprwayland-scanner-git hyprutils-git hyprcursor-git hyprland-qtutils
+swaync-git xdg-desktop-portal-hyprland-git hyprpolkitagent-git hypridle-git hyprpaper-git hyprpicker-git hyprlock-git 
+# Install dependencies
+ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite libxrender libxcursor pixman wayland-protocols cairo pango libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus hyprlang-git hyprcursor-git hyprwayland-scanner-git xcb-util-errors hyprutils-git glaze hyprgraphics-git aquamarine-git re2 hyprland-qtutils
+hyprland-git
 qt5-wayland qt6-wayland
 sddm-git
 kitty
