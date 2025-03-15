@@ -98,7 +98,11 @@
         "format": "{ifname}",
         "format-wifi": "{essid}",
         "format-disconnected": "󰤭",
-        "tooltip-format": "Connected to {essid}",
+	"tooltip-format": "{ifname} (via {gwaddr}): {ipaddr}",
+    	"tooltip-format-wifi": "{essid} ({signalStrength}%) (via {gwaddr}): {ipaddr}",
+    	"tooltip-format-ethernet": "{ifname} (via {gwaddr}): {ipaddr}",
+    	"tooltip-format-disconnected": "Disconnected",
+    	"max-length": 50,
         "on-click": "kitty -- nmtui"
     },
     "cava": {
