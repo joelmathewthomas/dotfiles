@@ -5,8 +5,7 @@
     "modules-left": [
         "group/group-cpu",
         "hyprland/workspaces",
-	"mpris",
-	"cava"
+	"mpris"
     ],
     "modules-center": [
         "hyprland/window"
