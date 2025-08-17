@@ -54,7 +54,7 @@
 	"artist-len": 20,
 	"max-length": 30,
 	"elipsis": "...",
-	"ignored-players": ["librewolf", "chromium"]
+	"ignored-players": ["firefox", "chromium"]
      },
     "gamemode": {
 		"format": "{glyph}",
