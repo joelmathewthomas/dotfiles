@@ -193,6 +193,12 @@ label:focus {
   color: #ffd580;
 }
 
+#cpu,
+#memory,
+#temperature {
+  padding: 0px 3px;
+}
+
 #network {
   background-color: transparent;
 }
