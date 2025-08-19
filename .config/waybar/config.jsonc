@@ -115,6 +115,8 @@
     "format-full": "{icon}",
     "format-charging": "󰂄",
     "format-plugged": "",
+    "tooltip": true,
+    "tooltip-format": "{capacity}%",
     // "format-alt": "{icon}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
