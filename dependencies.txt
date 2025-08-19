@@ -27,7 +27,7 @@ emote
 rofi-wayland
 wlogout
 waybar-cava
-ttf-fira-sans noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome nerd-fonts
+ttf-fira-sans noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome nerd-fonts otf-font-awesome
 gnome-keyring
 eww
 cava iniparser fftw

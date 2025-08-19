@@ -29,174 +29,263 @@
 @define-color pink      #f5c2e7;
 @define-color flamingo  #f2cdcd;
 @define-color rosewater #f5e0dc;
+@define-color pastel #dce3f5;
+@define-color pastel-inactive rgba(220, 227, 245, 0.3);
 
 * {
-    font-family: Cantarell, Symbols Nerd Font;
-    font-weight: bolder;
-    font-size: 14px;
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: Cantarell, "Symbols Nerd Font";
+  font-size: 14px;
+  font-weight: bolder;
 }
 
-window#waybar {
-    background-color: @crust;
-    color: @text;
-    transition-property: background-color;
-    transition-duration: .5s;
+#waybar {
+  background-color: rgba(0, 0, 0, 0);
+  color: @pastel;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
-
-
-window#waybar.termite {
-    background-color: #3F3F3F;
+tooltip {
+  background: rgba(43, 48, 59, 1);
 }
 
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
+tooltip label {
+  color: white;
 }
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
-#workspaces button:hover {
-    color: @blue;
-    box-shadow: inherit;
-    text-shadow: inherit;
-    background: @crust;
-    border: @crust;
-}
-
 #workspaces button {
-    padding: 0px;
-    color: @lavender-inactive;
-    margin: 2px;
-    transition: color 200ms ease-in-out;
+  padding: 0px;
+  margin: 2px;
+  color: @pastel-inactive;
+  transition: color 200ms ease-in-out;
 }
 
-#workspaces button.selected {
-    color: @blue;
+#workspaces button:hover {
+  color: @pastel;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: transparent;
+  border: #1e1e2e;
 }
 
 #workspaces button.active {
-    color: @blue;
+  color: @pastel;
 }
 
 #workspaces button.urgent {
-    color: @red;
+  color: @red;
 }
 
+#cava,
 #clock,
 #battery,
 #cpu,
 #memory,
-#disk,
 #temperature,
 #backlight,
 #network,
 #pulseaudio,
-#wireplumber,
-#custom-pacman,
 #tray,
-#cava,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpris {
-    padding: 0 2px;
-    color: @lavender;
-    border-radius: 15px;
-    margin: 2px 0;
+#mpris,
+#power-profiles-daemon {
+  padding: 0px 4px;
+  color: @pastel;
 }
 
-#cpu {
-    margin-left: 4px;
+#workspaces {
+  margin: 0 8px;
 }
 
-#idle_inhibitor.activated {
-	color: @green;
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
 }
 
 #clock {
-    color: @text;
-}
-
-#custom-pacman {
-    color: @peach;
-}
-
-#pulseaudio {
-    color: @mauve;
-}
-
-#pulseaudio.muted {
-    color: @surface2;
-}
-
-#network.disconnected {
-    color: @surface2;
+  background-color: transparent;
+  color: @pastel;
 }
 
 #battery {
-    color: @green;
+  background-color: transparent;
+  color: #81c784;
+}
+
+#battery.charging {
+  color: #81c784;
+  background-color: transparent;
 }
 
 #battery.plugged {
-    color: @blue;
+  color: @blue;
+  background-color: transparent;
 }
 
-#battery.warning {
-    color: @red;
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+  background-color: @red;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#power-profiles-daemon {
+  font-size: 13px;
+  padding: 0 8px;
+}
+
+#power-profiles-daemon.performance {
+  color: @red;
+}
+
+#power-profiles-daemon.balanced {
+  color: #2980b9;
+}
+
+#power-profiles-daemon.power-saver {
+  color: @green;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#cpu {
+  background-color: transparent;
+  margin-left: 6px;
+}
+
+#memory {
+  background-color: transparent;
+}
+
+#backlight {
+  background-color: transparent;
+  color: #ffd580;
+}
+
+#network {
+  background-color: transparent;
+}
+
+#network.disconnected {
+  background-color: transparent;
+}
+
+#pulseaudio {
+  background-color: transparent;
+  color: @mauve;
+}
+
+#pulseaudio.muted {
+  background-color: transparent;
+  padding: 0 10px;
+}
+
+#temperature {
+  background-color: transparent;
+}
+
+#idle_inhibitor {
+  background-color: transparent;
+  padding: 0 4px;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 4px;
+}
+
+#idle_inhibitor.activated {
+  background-color: transparent;
+  color: @green;
+}
+
+#idle_inhibitor.deactivated {
+  background-color: transparent;
+  color: @lavender;
+}
+
+#tray {
+  background-color: transparent;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: transparent;
+}
+
+#cava {
+  color: @pastel;
+  letter-spacing: 1px;
+  font-size: 9px;
 }
 
 #group-power {
-    color: @maroon;
-}
-
-#group-cpu {
-	margin-right: 3px;
-}
-
-#custom-reboot {
-    color: @green;
-}
-
-#custom-lock {
-    color: @blue;
+  margin-right: 4px;
 }
 
 #custom-quit {
-    color: @lavender;
+  padding: 0 4px;
+  color: #ff6f61;
+}
+
+#custom-reboot {
+  padding: 0 4px;
+  color: @green;
+}
+
+#custom-lock {
+  padding: 0 4px;
+  color: @lavender;
+}
+
+#custom-power {
+  padding: 0 4px;
+  color: @red;
 }
 
 #custom-sleep {
-    color: @sky;
+  padding: 0 4px;
+  color: #ffd54f;
 }
 
-#keyboard-state > label {
-    padding: 0 5px;
+#mpris {
+  color: @pastel;
 }
 
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
+#user {
+  padding: 0 2px;
+  color: @red;
 }
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-    background-color: transparent;
-}
-
-
-
