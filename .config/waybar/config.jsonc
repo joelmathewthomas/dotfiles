@@ -223,7 +223,7 @@
   "group/group-cpu": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 250,
+      "transition-duration": 350,
       "children-class": "not-cpu",
       "transition-left-to-right": true
     },
@@ -237,7 +237,7 @@
   "group/group-power": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 250,
+      "transition-duration": 350,
       "children-class": "not-power",
       "transition-left-to-right": false
     },
