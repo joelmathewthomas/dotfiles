@@ -10,7 +10,6 @@
   "modules-left": ["group/group-cpu", "hyprland/workspaces", "mpris"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
-    "cava",
     "gamemode",
     "tray",
     "power-profiles-daemon",
