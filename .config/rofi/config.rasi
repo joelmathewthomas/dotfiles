@@ -3,28 +3,30 @@ configuration {
     display-drun:   "Applications";
     disable-history: false;
     display-filebrowser:    "File Browser";
+    drun-display-format:    "{name}";
 }
 
 * {
     font:   "Cantarell 12";
-    bg-color:   rgba(0, 0, 0, 25%);
+    bg-color:   rgba(30, 30, 46, 45%);
     fg-color:   white;
     null-color: rgba(0, 0, 0, 0%);
-    background-color:   @bg-color;
+    background-color:   @null-color;
     foreground:     @fg-color;
 }
 
 #window {
     background-color:   @bg-color;
-    border:     3;
-    border-radius:      10;
+    border:     1px;
+    border-radius:      16px;
     padding:    0;
-    border-color:	lightblue;
+    border-color:   rgba(255, 255, 255, 12%);
+    width:      760px;
 }
 
 #mainbox {
     background-color:   @null-color;
-    padding:    5;
+    padding:    12px;
     border-radius:      10;
 }
 
@@ -36,16 +38,17 @@ configuration {
 #listview {
     border:       0px;
     border-radius:   10;
-    spacing:      0px ;
+    spacing:      4px ;
     scrollbar:    false;
     padding:      0px ;
-    lines:      8;
+    lines:      6;
 }
 
 #element {
-    border:  5px;
-    border-color:   @null-color;
-    padding: 3px ;
+    border:  0;
+    border-radius:  10px;
+    padding: 8px 10px ;
+    spacing: 10px;
 }
 
 #element.normal.normal {
@@ -54,10 +57,8 @@ configuration {
 }
 
 #element.selected.normal {
-    background-color: rgba(173, 216, 230,0.5);
+    background-color: rgba(255, 255, 255, 14%);
     text-color:       white;
-    border:     5;
-    border-radius:      5;
 }
 
 #element.alternate.normal {
@@ -66,12 +67,14 @@ configuration {
 }
 
 #inputbar {
+    background-color:   rgba(255, 255, 255, 8%);
     border-color:   @null-color;
     border:     0;
-    border-radius:      10;
+    border-radius:      12px;
     spacing:    5;
     text-color: white;
-    padding:    5px ;
+    padding:    10px 14px ;
+    margin:     0px 0px 10px 0px ;
 }
 
 #entry {
@@ -81,6 +84,7 @@ configuration {
     background-color:   @null-color;
     text-color: white;
     padding:    0;
+    placeholder:    "Search";
 }
 
 #prompt {
@@ -103,6 +107,11 @@ configuration {
 
 element-text, element-icon {
     text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size:   1.6em;
 }
 
 #message {
