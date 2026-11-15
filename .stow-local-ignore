@@ -22,5 +22,5 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
-commit.good
+.hyprland-version
 dependencies.txt
