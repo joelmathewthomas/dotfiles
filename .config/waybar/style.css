@@ -40,7 +40,7 @@
 }
 
 #waybar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.01);
   color: @pastel;
   transition-property: background-color;
   transition-duration: 0.5s;

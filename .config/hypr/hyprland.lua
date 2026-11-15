@@ -133,7 +133,7 @@ hl.config({
 
         blur = {
             enabled           = true,
-            variant           = "aurora",
+            variant           = "heat_shimmer",
             size              = 4,
             passes            = 2,
             vibrancy          = 0.1696,
@@ -492,6 +492,7 @@ local opacityRules = {
     { "^(thunar)$",                      "0.85" },
     { "^(Thunar)$",                      "0.85" },
     { "^(code)",                         "0.90" },
+    { "^(com.microsoft.VSCode)",         "0.90" },
     { "^(code-url-handler)",             "0.90" },
     { "^(Spotify)$",                     "0.90" },
     { "^(spotify)$",                     "0.90" },
@@ -512,6 +513,14 @@ hl.layer_rule({
 
     blur         = true,
     xray         = false,
+    ignore_alpha = 0,
+})
+
+hl.layer_rule({
+    name  = "waybar",
+    match = { namespace = "waybar" },
+
+    blur         = true,
     ignore_alpha = 0,
 })
 
